@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+
+    <style>
+        .inputs
+        {
+
+        }
+
+        #all
+        {
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+        }
+
+        .budgetBox
+        {
+            border: green 5px solid ;
+           
+        
+        }
+
+        .expenceBox
+        {
+            border: red 5px solid ;
+        }
+
+        .inputs
+        {
+            display: flex;
+           
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .Calc
+        {
+         border: green solid 3px;
+            color: green;
+            
+        }
+
+        .Exp
+        {
+            border: red solid 3px;
+            color: red;
+        }
+
+        .totals
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+           
+        }
+
+        .column
+        {
+            padding-left: 10%;
+        }
+
+        .icon
+        {
+            color: royalblue;
+            font-size: 50px;
+        }
+.green
+{
+color: green;
+}
+
+.red
+{
+    color: red;
+}
+
+#space
+{
+    margin: 10%;
+}
+
+.bar
+{
+    
+}
+    </style>
+
+
+</head>
+
+<body>
+    
+<div id="all">
+
+    <div class="inputs">
+
+        <h1>BUDGET APP</h1>
+    <div class="budgetBox">
+        <h3>Please Enter Your Budget</h3>
+        <input class="bar"> </input>
+        <br>
+        <br>
+        <button class="Calc"> calculate </button>
+    </div>
+
+    <div id="space">
+
+
+    </div>
+    
+
+    <div class="expenceBox">
+        <h3>Please Enter Your Expense</h3>
+        <input class="bar"> </input>
+        <h3>Please Enter Expense Amount</h3>
+        <input class="bar"> </input>
+        <br>
+        <br>
+        <button class="Exp"> calculate </button>
+    </div>
+    
+</div>
+
+    <div class="totals">
+    <div class="column">
+    <h2>BUDGET</h2>
+    <ion-icon name="cash" class="icon"></ion-icon>
+    <br>
+    <p class="green">  <ion-icon name="logo-usd" ></ion-icon>0 </p>
+    <h3>Expense Title</h3>
+    </div>
+
+    <div class="column">
+        <h2>EXPENSES</h2>
+        <ion-icon name="card" class="icon"></ion-icon>
+        <br>
+        <p class="red"><ion-icon name="logo-usd" ></ion-icon> 0 </p>
+        <h3>Expense Value</h3>
+        </div>
+   
+
+    <div class="column">
+        <h2>BALANCE</h2>
+        <ion-icon name="logo-usd" class="icon"></ion-icon>
+        <br>
+       <p> <ion-icon name="logo-usd" ></ion-icon> 0 </p>
+    </div>
+
+   </div>
+
+</div>
+    
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
